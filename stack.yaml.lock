@@ -3,7 +3,14 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages: []
+packages:
+- completed:
+    hackage: persistent-spatial-0.1.0.0@sha256:e83f66122044bf123f2a096154b33395ae8b1c724d6387766a1669b3c6140da3,2213
+    pantry-tree:
+      size: 434
+      sha256: 65fe4dab1c6403566d6e79db3def6b9fe6c6232c7c90e80492d4c6d584824ac3
+  original:
+    hackage: persistent-spatial-0.1.0.0@sha256:e83f66122044bf123f2a096154b33395ae8b1c724d6387766a1669b3c6140da3,2213
 snapshots:
 - completed:
     size: 585817

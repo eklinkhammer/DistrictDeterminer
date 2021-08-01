@@ -2,9 +2,9 @@ name:                DistrictDeterminer
 version:             0.1.0.0
 github:              "githubuser/DistrictDeterminer"
 license:             BSD3
-author:              "Author name here"
-maintainer:          "example@example.com"
-copyright:           "2021 Author name here"
+author:              "Eric Klinkhammer"
+maintainer:          "eklinkhammer@pgmail.com"
+copyright:           "2021 Eric Klinkhammer"
 
 extra-source-files:
 - README.md
@@ -21,6 +21,14 @@ description:         Please see the README on GitHub at <https://github.com/gith
 
 dependencies:
 - base >= 4.7 && < 5
+- hgeometry >= 0.12
+- persistent-spatial >= 0.1
+- vector >= 0.12
+- bytestring >= 0.10.12.0
+- cassava >= 0.5.2.0
+- turtle >= 1.5.22
+- text >= 1.2.4.1
+- foldl >= 1.4.12
 
 library:
   source-dirs: src
