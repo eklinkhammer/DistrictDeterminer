@@ -4,26 +4,12 @@ import qualified Data.Vector as V
 import qualified Data.ByteString.Lazy as BL
 import qualified Control.Foldl as Fold
 import Data.Csv
-import GHC.Generics (Generic)
 import Data.Text hiding (empty)
 
 import Lib
 import Turtle hiding (x, err, f)
 
-data District = District {
-    latLongs :: V.Vector Coords,
-    districtType :: Text,
-    districtName :: Text
-} deriving (Show, Eq)
-
-data Coords = Coords {
-    x :: Int,
-    y :: Int
-} deriving (Generic, Show, Eq)
-
-instance FromNamedRecord Coords
-instance ToNamedRecord Coords
-instance DefaultOrdered Coords
+import Data.District (District (..), Coords (..))
 
 file :: String
 file = "resources/example_type/example_district_1.csv"

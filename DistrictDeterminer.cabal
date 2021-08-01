@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 3ec9623ac33dd7029ec0e5923e6fd9ff8213eea0078263bdd0c50ab048be63f0
+-- hash: fe223e2c078a3f3812904650f14294361cb92f9320902ec42bc20f28fabbffd1
 
 name:           DistrictDeterminer
 version:        0.1.0.0
@@ -27,6 +27,7 @@ source-repository head
 
 library
   exposed-modules:
+      Data.District
       Lib
   other-modules:
       Paths_DistrictDeterminer
