@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: fa7dced49b60cd4ff235e3b51fc23ce538afa2f58ee763bd06989b32fc2670f1
+-- hash: 3ac67582ef151699219169b31455efe2d9ebed3d32fc23706350d11346b4bddf
 
 name:           DistrictDeterminer
 version:        0.1.0.0
@@ -162,4 +162,6 @@ test-suite DistrictDeterminer-test
   build-depends:
       DistrictDeterminer
     , base >=4.7 && <5
+    , hspec ==2.*
   default-language: Haskell2010
+  build-tool-depends: hspec-discover:hspec-discover == 2.*
