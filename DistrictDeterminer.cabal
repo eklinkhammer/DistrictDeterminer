@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 5986ed3fd75f579e9bbce98eb912505eefe2b6b44d0a35ee8be260037d0aeca1
+-- hash: c1433ab87c99801bb93456835dd5a914fc78d20c115642efe0ba9d6aca35596d
 
 name:           DistrictDeterminer
 version:        0.1.0.0
@@ -29,6 +29,7 @@ library
   exposed-modules:
       Data.District
       Lib
+      Polygon.PointInDistrict
       UserInput.ReadCSVDistricts
   other-modules:
       Paths_DistrictDeterminer
@@ -75,6 +76,7 @@ library
     , cassava >=0.5.2.0
     , foldl >=1.4.12
     , hgeometry >=0.12
+    , hgeometry-combinatorial >=0.12.0.3
     , persistent-spatial >=0.1
     , text >=1.2.4.1
     , turtle >=1.5.22
@@ -129,6 +131,7 @@ executable DistrictDeterminer-exe
     , cassava >=0.5.2.0
     , foldl >=1.4.12
     , hgeometry >=0.12
+    , hgeometry-combinatorial >=0.12.0.3
     , persistent-spatial >=0.1
     , text >=1.2.4.1
     , turtle >=1.5.22
@@ -139,6 +142,7 @@ test-suite DistrictDeterminer-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      Polygon.PointInDistrictSpec
       Paths_DistrictDeterminer
   hs-source-dirs:
       test
@@ -184,6 +188,7 @@ test-suite DistrictDeterminer-test
     , cassava >=0.5.2.0
     , foldl >=1.4.12
     , hgeometry >=0.12
+    , hgeometry-combinatorial >=0.12.0.3
     , hspec ==2.*
     , persistent-spatial >=0.1
     , text >=1.2.4.1

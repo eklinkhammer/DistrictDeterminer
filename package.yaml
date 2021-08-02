@@ -29,6 +29,7 @@ dependencies:
 - turtle >= 1.5.22
 - text >= 1.2.4.1
 - foldl >= 1.4.12
+- hgeometry-combinatorial >= 0.12.0.3
 
 library:
   source-dirs: src
