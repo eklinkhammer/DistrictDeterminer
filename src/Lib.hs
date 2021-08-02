@@ -1,6 +1,5 @@
 module Lib
-    ( someFunc
+    ( readDistricts
     ) where
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+import UserInput.ReadCSVDistricts (readDistricts)
