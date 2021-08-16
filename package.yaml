@@ -88,6 +88,7 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - DistrictDeterminer
+    - optparse-simple >= 0.1.1.4
 
 tests:
   DistrictDeterminer-test:

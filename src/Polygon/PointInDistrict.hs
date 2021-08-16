@@ -1,14 +1,21 @@
 module Polygon.PointInDistrict
     (
         isPointInDistrict
+    ,   filterDistrictsIfCoord
     ) where
 
 import Data.District (District (..), Coords (..))
-import Data.Ext
+import Data.Ext ( ext, type (:+) )
 import Data.Geometry.Boundary (PointLocationResult (..))
 import Data.Geometry.Point (Point (..))
 import Data.Geometry.Polygon
+    ( inPolygon, fromPoints, SimplePolygon )
 import qualified Data.Vector as V (map, toList)
+
+
+filterDistrictsIfCoord :: Coords -> [District] -> [District]
+filterDistrictsIfCoord coords =  filter (isPointInDistrict coords)
+
 
 isPointInDistrict :: Coords -> District -> Bool
 isPointInDistrict coords district = isInsideOrOnBoundary $ inPolygon point polygon

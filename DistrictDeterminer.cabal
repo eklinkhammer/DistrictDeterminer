@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: c1433ab87c99801bb93456835dd5a914fc78d20c115642efe0ba9d6aca35596d
+-- hash: ea4fe166d6322e3b447d7029e571b2efb6a7334e3613b1be1eca757251d59251
 
 name:           DistrictDeterminer
 version:        0.1.0.0
@@ -132,6 +132,7 @@ executable DistrictDeterminer-exe
     , foldl >=1.4.12
     , hgeometry >=0.12
     , hgeometry-combinatorial >=0.12.0.3
+    , optparse-simple >=0.1.1.4
     , persistent-spatial >=0.1
     , text >=1.2.4.1
     , turtle >=1.5.22

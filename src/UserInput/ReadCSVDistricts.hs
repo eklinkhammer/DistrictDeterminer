@@ -7,8 +7,8 @@ import Data.Functor ((<&>))
 import qualified Data.Vector as V (empty, Vector)
 import qualified Data.ByteString.Lazy as BL (readFile)
 import qualified Control.Foldl as Fold
-import Data.Csv
-import Data.Text hiding (empty)
+import Data.Csv ( decodeByName )
+import Data.Text ( intercalate, splitOn, Text )
 
 import Turtle (FilePath, fold, ls, testdir, toText, encodeString)
 

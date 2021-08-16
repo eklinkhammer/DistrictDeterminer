@@ -1,6 +1,7 @@
 module Lib
     ( readDistricts
+    , Coords (..)
     ) where
 
 import UserInput.ReadCSVDistricts (readDistricts)
--- import Polygon.PointInDistrict (isPointInDistrict)
+import Data.District (Coords (..))
